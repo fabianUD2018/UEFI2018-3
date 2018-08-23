@@ -1,0 +1,119 @@
+/** General **/
+
+body {
+    background: #EEEEEE;
+    color: black;
+    text-decoration: none;
+}
+
+/** Para los enlaces **/
+
+a {
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/** Colores **/
+
+.Blue,
+.Blue:hover {
+    color: rgba(64, 64, 197, 0.856);
+}
+
+.Orange,
+.Orange:hover {
+    color: orange;
+}
+
+
+/** Navbar **/
+
+.wrapper {
+    display: flex;
+}
+
+nav.cabecera {
+    background: #1A2632;
+}
+
+.nav-tabs a {
+    color: #EEEEEE;
+}
+
+ul.nav-tabs {
+    background: #394B59;
+    width: initial;
+    min-height: -webkit-fill-available;
+}
+
+.titleSliderAdmin {
+    font-size: x-large;
+}
+
+.wrapper .nav-item a:hover {
+    background: #2E3A46;
+    color: #EEEEEE;
+}
+
+ul .active {
+    background: #2E3A46;
+}
+
+
+/** Login **/
+
+form {
+    background: #DDDDDD;
+    border-color: #CCCCCC;
+    border-style: groove;
+}
+
+.login-img {
+    color: #34aadc;
+    font-size: 50px;
+}
+
+.input-group div i {
+    color: #BBBBBB;
+}
+
+form a {
+    color: #888888;
+}
+
+form .btn {
+    border-radius: 0;
+}
+
+
+/** Inicio **/
+
+.buttonCursos {
+    background: #558A9C;
+}
+
+.buttonDiplomados {
+    background: #D0BA95;
+}
+
+.buttonConvenios {
+    background: #1A2632;
+}
+
+.buttonInscripciones {
+    background: #27C183;
+}
+
+.buttonIndex i {
+    color: #EEEEEE;
+    font-size: 50px;
+}
+
+.buttonIndex i:hover {
+    color: rgb(171, 161, 212);
+    ;
+}

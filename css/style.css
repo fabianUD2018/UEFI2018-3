@@ -1,0 +1,419 @@
+/***********************************
+Body (Color uefi: rgb(35, 93, 128); )
+     (Color uefi: hsla(203, 57%, 32%, 1); )
+************************************/
+
+body {
+    background: #ffffff;
+    color: black;
+}
+
+
+/***********************************
+Navbar
+************************************/
+
+
+/* Barra principal */
+
+.nav-principal {
+    background-color: hsla(203, 53%, 24%);
+    color: white;
+}
+
+
+/* ¿Eliminar? */
+
+.toggler-personalizado .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252,252,252, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border-color: rgb(252, 252, 252);
+}
+
+
+/* Barra general */
+
+.nav-general {
+    background: rgb(35, 93, 128);
+}
+
+
+/* Color de la letra en el navbar */
+
+nav a {
+    color: #fff;
+}
+
+
+/* Color del enlace relacionado con la página actual */
+
+nav .active {
+    color: hsla(0, 0%, 80%);
+}
+
+
+/* Color de la letra en el navbar al pasar el cursor por encima */
+
+nav a:hover {
+    color: #272727;
+}
+
+
+/* Color del texto en un dropdown al pasar el cursor por encima */
+
+.dropdown-item:hover {
+    color: rgb(35, 93, 128);
+}
+
+
+/* ¿Eliminar? */
+
+.dropdown-item:active {
+    background: #fff;
+}
+
+
+/* ===================================================================
+ * # footer
+ *
+ * ------------------------------------------------------------------- */
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.842);
+    background-color: #111;
+}
+
+
+/* Letra del footer */
+
+footer a {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* No pertenece a Footer */
+
+
+/* Letra del Footer al pasar el cursor por encima */
+
+footer a:hover {
+    color: rgb(35, 93, 128);
+}
+
+footer h4 {
+    font-family: "metropolis-bold", sans-serif;
+    font-size: 70%;
+    line-height: 1.286;
+    text-transform: none;
+    letter-spacing: .25rem;
+    padding-bottom: 4.2rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Separador horizontal */
+
+footer h4::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(35, 93, 128);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Botón para volver al inicio de la página */
+
+.back-to-top {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 80%, 0.5);
+    color: hsla(203, 53%, 24%);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+}
+
+.back-to-top:hover {
+    color: rgb(35, 93, 128)
+}
+
+
+/* -------------------------------------------------------------------
+ * ## footer link list
+ * ------------------------------------------------------------------- */
+
+.s-footer__linklist {
+    list-style: none;
+    margin-left: 0;
+}
+
+.s-footer__linklist a {
+    color: rgba(255, 255, 255, 0.829);
+}
+
+.s-footer__linklist li {
+    padding-left: 0;
+    font-size: 70%;
+}
+
+
+/* -------------------------------------------------------------------
+ * ## copyright
+ * ------------------------------------------------------------------- */
+
+.s-footer__copyright span {
+    font-size: 65%;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * footer components
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width:1200px) {
+    .s-footer__main>.row {
+        max-width: 800px;
+    }
+    .s-footer__sitelinks,
+    .s-footer__archives,
+    .s-footer__social {
+        margin-bottom: 3rem;
+    }
+    .s-footer__subscribe {
+        clear: both;
+    }
+    .s-footer__bottom {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    footer {
+        padding-top: 7.8rem;
+    }
+    .s-footer__main .row {
+        max-width: 480px;
+    }
+    .s-footer__main h4 {
+        padding-bottom: 0;
+        margin-bottom: 2.4rem;
+    }
+    .s-footer__main h4::after {
+        display: none;
+    }
+    .s-footer__main .s-footer__linklist {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .s-footer__main .s-footer__linklist li a {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        padding: .6rem 0;
+    }
+    .s-footer__main .s-footer__linklist li:first-child a {
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+    }
+    .s-footer__sitelinks,
+    .s-footer__archives,
+    .s-footer__social,
+    .s-footer__subscribe {
+        text-align: center;
+    }
+    .s-footer__sitelinks,
+    .s-footer__archives,
+    .s-footer__social {
+        margin-bottom: 4.2rem;
+    }
+    .s-footer__main .row [class*="col-"]:nth-child(2) {
+        display: none;
+    }
+    .s-footer__bottom {
+        padding-bottom: .6rem;
+    }
+    .s-footer__bottom .s-footer__copyright span {
+        display: block;
+    }
+    .s-footer__bottom .s-footer__copyright span::after {
+        display: none;
+    }
+}
+
+
+/***********************************
+Carousel
+************************************/
+
+.carousel-item {
+    background-color: #d4cece;
+}
+
+
+/***********************************
+Con quienes trabajamos
+************************************/
+
+[class*=" imghvr-"] figcaption,
+[class^="imghvr-"] figcaption {
+    background-color: rgb(0, 0, 0);
+}
+
+[class*=" imghvr-"],
+[class^="imghvr-"] {
+    background-color: #5FCF80;
+    color: #fff;
+}
+
+
+/***********************************
+Sections 
+************************************/
+
+.section-title {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title-divider {
+    width: 50px;
+    height: 3px;
+    background: rgb(35, 93, 128);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+/***********************************
+Preloader
+************************************/
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+
+/*--------------------------------------------------------------
+# portada
+--------------------------------------------------------------*/
+
+#hero {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fondoUD2.jpg) top center fixed;
+    background-size: cover;
+}
+
+#hero .hero-logo {
+    margin: 20px;
+}
+
+#hero .hero-logo img {
+    max-width: 100%;
+}
+
+#hero .hero-container {
+    background: rgba(0, 0, 0, 0.8);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#hero h1 {
+    margin: 30px 0 10px 0;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#hero h2 {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    #hero h2 .rotating {
+        display: block;
+    }
+}
+
+#hero .rotating>.animated {
+    display: inline-block;
+}
+
+#hero .actions a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+#hero .btn-get-started {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+    color: #fff;
+}
+
+#hero .btn-get-started:hover {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#hero .btn-services {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#hero .btn-services:hover {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+}

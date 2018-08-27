@@ -32,6 +32,7 @@
 				echo "<th><center><i class=\"fa fa-times\"></i><br>Fecha Fin</center></th>";
 				echo "<th><center><i class=\"fa fa-check\"></i><br>Codigo Recaudo</center></th>";
 				echo "<th><center><i class=\"fa fa-dollar\"></i><br>Inversión</center></th>";
+				echo "<th><center><i class=\"fa fa-bookmark\"></i><br>Actualizar</center></th>";
 			echo "</tr>";
 			//Se consultan todos los convenios
 			$conexion=Conexion::getInstance();
@@ -48,9 +49,10 @@
 					$fechafinprogaca = $reg['fechafinprogaca'];
 					$codigorecaudo = $reg['codigorecaudo'];
 					$inversion = $reg['inversion'];
+					echo '<form class="form-inline" method="post" action="./actualizarconvenio.php" enctype="multipart/form-data">';
 					echo "<tr>";
-						echo "<td>$idprogramaacademico</td>";
-						echo "<td>$nomprogramaacademico</td>";
+						echo "<td><input type='text' name= 'id' value ='$idprogramaacademico' readonly ='true'></td>";
+						echo "<td ><input type ='text' name ='nombrePrograAca' value= '$nomprogramaacademico'></input></td>";
 						//Se cambian los números de id tipoestado a letras 
 						if($idtipoestado==1){
 							$idtipoestadoLetra="Programación";
@@ -60,12 +62,14 @@
 						}else{
 							$idtipoestadoLetra="Dictando";
 						}
-						echo "<td>$idtipoestadoLetra</td>";
-						echo "<td>$fechainicioprogaca</td>";
-						echo "<td>$fechafinprogaca</td>";
-						echo "<td>$codigorecaudo</td>";
-						echo "<td>$inversion</td>";
+						echo "<td contenteditable='true'>$idtipoestadoLetra</td>";
+						echo "<td ><input type='date'  name = 'fechaIni' value ='$fechainicioprogaca'></input></td>";
+						echo "<td ><input type='date'  name = 'fechaFin' value ='$fechafinprogaca'></input></td>";
+						echo "<td contenteditable='true'><input type='text' name ='codrecaudo' value='$codigorecaudo'> </input></td>";
+						echo "<td contenteditable='true'><input type='text' name ='inversion' value='$inversion'> </input></td>";
+						echo "<td><input type='submit' value ='Actualizar'></button></td>";
 					echo "</tr>";
+					echo "</form>";
 				}
 				echo "</tbody>";
 			echo "</table>";

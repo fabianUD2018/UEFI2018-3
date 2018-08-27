@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Consultar Inscripciones</title>
+	<title>Agregar convenio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- Hojas de estilo -->
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
@@ -13,6 +13,9 @@
 	<!-- /Hojas de estilo -->
 </head>
 <body>
+<?php
+		include("funciones-actualizacion/FuncionesActualizarConvenio.php");
+?>
   <!-- Barra de navegación del Admin -->
   <nav class="cabecera navbar navbar-expand-md">
     <!-- Toggler/collapsibe Button -->
@@ -57,7 +60,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="#agregarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin">
+        <a href="#agregarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin active">
           <i class="fa fa-plus">
             <span>
               Agregar
@@ -70,7 +73,7 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a href="#consultarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin active">
+        <a href="#consultarSubmenu" data-toggle="collapse" aria-expanded="true" class="titleSliderAdmin">
           <i class="fa fa-eye">
             <span>
               Consultar
@@ -96,29 +99,11 @@
     <!-- /Barra lateral de navegación -->
     <!-- Contenido específico de la página -->
     <div class="container">
-      <div class="row-12">
-		    <h3 class="section-title text-center">Consultar inscripciones</h3>
-      </div>
       <div class="row">
-        <div class="col-six">
-          <form class="form-inline" method="post" action="RespuestaConsultaInscripcionesCedula.php" enctype="multipart/form-data">
-            <div class="form-group">
-              <label class="sr-only"></label>
-              <p class="form-control-static"><center>Cédula del inscrito</center></p>
-            </div>
-            <div class="form-group mx-sm-3">
-              <label for="cedula" class="sr-only"></label>
-              <input type="ptext" class="form-control" name="numerodocumento" id="cedula" placeholder="ingrese la cedula a buscar">
-            </div>
-            <button type="submit" class="btn btn-primary">Buscar</button>
-          </form>
-          </div>
-          <div class="col-six">
-            <form method="post" action="RespuestaConsultaInscripcionesTodos.php" enctype="multipart/form-data">
-              <button type="submit" class="btn btn-secondary">Consultar todos los registros</button>
-            </form>
-          </div>
+        <div class="col">
+          <?php ActualizarConvenio();?> 
         </div>
+      </div>
     </div>
     <!-- /Contenido específico de la página -->
   </div>

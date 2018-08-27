@@ -1,0 +1,14 @@
+INSERT INTO tipodocumento VALUES (1,'cedula');
+INSERT INTO tipodocumento VALUES (2,'tarjeta de identidad');
+INSERT INTO tipodocumento VALUES (3,'cedula de extranjeria');
+INSERT INTO tipoimgprogaca VALUES (1,'banner');
+INSERT INTO tipoimgprogaca VALUES (2,'medium');
+INSERT INTO tipoimgprogaca VALUES (3,'small');
+INSERT INTO formapago VALUES (1,'fisico');
+INSERT INTO formapago VALUES (3,'pse');
+INSERT INTO tipoprogramaacademico VALUES (1,'curso');
+INSERT INTO tipoprogramaacademico VALUES (2,'diplomado');
+INSERT INTO tipoestado VALUES (1,'programacion');
+INSERT INTO tipoestado VALUES (2,'inscripcion');
+INSERT INTO tipoestado VALUES (3,'dictando');
+COMMIT;

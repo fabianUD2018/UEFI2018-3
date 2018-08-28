@@ -32,6 +32,7 @@
 </head>
 <body>
 
+
 	<section id="inicio" class="sticky-top">
 	<!-- Header -->
 		<?php include("../section/header.php");?>
@@ -86,9 +87,13 @@
 	<!-- /Navbar General -->
   </section>
   
+	
+	
+	
+
   <div class="container pt-2 pb-2">
     <div class="row justify-content-center">
-      <form class="login-form" action="inicioAdmin.php">
+      <form method="post" class="login-form" action="funciones/FuncionesLogueo.php">
         <div class="form-group">
 					<div class="input-group justify-content-center">
 						<p class="login-img"><i class="fa fa-lock pt-2 pb-2"></i></p>
@@ -98,7 +103,7 @@
 							<i class="fa fa-user"></i>
 						</div>
             <div class="col">
-							<input type="text" class="form-control" placeholder="Username" autofocus>
+							<input type="text" class="form-control" placeholder="Correo" autofocus name="user">
 						</div>
           </div>
           <div class="input-group">
@@ -106,7 +111,7 @@
 							<i class="fa fa-key"></i>
 						</div>
 						<div class="col">
-							<input type="password" class="form-control" placeholder="Password" >
+							<input type="password" class="form-control" placeholder="Contrasena" name="pass">
 						</div>
           </div>
 					<center>

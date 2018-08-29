@@ -71,7 +71,7 @@
 	</div>
 	<!-- /Navbar General -->
 	</section>
-	
+	<?php include("../section/nav-lateral.php"); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md">

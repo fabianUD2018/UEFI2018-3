@@ -1,12 +1,13 @@
 <?php include '../consultas/conexion.php';
 		function consultarImagenesSlider() {
+			
 			$conexion=Conexion::getInstance();
 			$consulta = "select  nombreimg,direccionimg from imagen where idtipoimagen=1";
 			$registros = $conexion->obtener($consulta);
 			$numeroRegistros = mysqli_num_rows($registros);
 			
 			//<!-- Carrousel -->
-			echo "<div id=\"news\" class=\"col-md-8 carousel slide\" data-ride=\"carousel\">";
+			echo "<div  id=\"news\" class=\"col-md-8 carousel slide\" data-ride=\"carousel\">";
 				if ($numeroRegistros!=0) {
 				//<!-- Indicators -->
 					echo "<ul class=\"carousel-indicators\">";
@@ -18,8 +19,9 @@
 						$contador=$contador+1;
 					}
 					echo"</ul>";
+					//<!-- /Indicators -->
 				}
-				//<!-- /Indicators -->
+				
 				//<!-- The slideshow -->	
 				echo "<div class=\"carousel-inner\">";
 
@@ -27,6 +29,7 @@
 					$contador=0;	
 					while($reg=mysqli_fetch_assoc($registros)){
 						$nombreimg = $reg['nombreimg'];
+					
 						$direccionimg = $reg['direccionimg'];
 						if($contador==0){
 							echo "<div class=\"carousel-item active\">";

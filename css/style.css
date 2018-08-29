@@ -22,6 +22,16 @@ Navbar
 }
 
 
+.contenedor-menu{
+    float:left;
+    padding: 2px;
+    margin:2px;
+}
+a .active{
+    color: hsla(0, 0%, 80%);
+}
+
+
 /* ¿Eliminar? */
 
 .toggler-personalizado .navbar-toggler-icon {

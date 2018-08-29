@@ -69,6 +69,7 @@
 	</div>
   <!-- /Navbar General -->
   </section>
+  <?php include("../section/nav-lateral.php"); ?>
   <div class="container">
     <div class="row pt-5">
       <!-- Imágenes de UEFI -->

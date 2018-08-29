@@ -69,6 +69,7 @@
 	</div>
 	<!-- /Navbar General -->
 	</section>
+	<?php include("../section/nav-lateral.php"); ?>
 
 	<?php realizarInscripcion();?>
 

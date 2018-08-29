@@ -75,7 +75,9 @@
 	<!-- /Navbar General -->
 	</section>
 	<!-- Tab -->
+	<?php include("../section/nav-lateral.php"); ?>
 	<div class="container">
+	
 		<ul class="nav nav-tabs pt-4 pb-5" role="tablist">
 			<li class="nav-item">
 				<a class="nav-link active" href="#Programacion" role="tab" data-toggle="tab">En programación</a>

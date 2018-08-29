@@ -70,13 +70,16 @@
 	<!-- /Navbar General -->
 	</section>
 	<!-- Inicio -->
-	<div class="container">
+	<div class="container-fluid">
+	<?php include("../section/nav-lateral.php"); ?>
 		<!-- Noticias -->
 		<section id="Noticias" class="row justify-content-center pt-5">
 			<!-- Noticias más relevantes -->
-			<?php
+			<div class"col-sm-12">
+			<!-- <?php
 			consultarImagenesProgramaAcademico();
-			?>
+			?> -->
+			</div>
 			<!-- /Noticias más relevantes -->
 			<!--Slider-->
 			<?php

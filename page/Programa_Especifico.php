@@ -70,6 +70,7 @@
 		</div>
 		<!-- /Navbar General -->
 	</section>
+	<?php include("../section/nav-lateral.php"); ?>
 	<?php
 		$idProAca=obtenerId();
 		if ($idProAca!=-1){

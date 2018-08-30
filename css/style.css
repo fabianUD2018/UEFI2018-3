@@ -8,7 +8,15 @@ body {
     color: black;
 }
 
+/*¨****
+cursos-diplomados-convenios******/
 
+div[class$="cursos-diplo-con"] li a{
+    text-align: center;
+    background-color: hsla(203, 53%, 24%);
+    color: white;
+
+}
 /***********************************
 Navbar
 ************************************/

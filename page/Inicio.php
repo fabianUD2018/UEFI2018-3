@@ -74,18 +74,43 @@
 	<?php include("../section/nav-lateral.php"); ?>
 		<!-- Noticias -->
 		<section id="Noticias" class="row justify-content-center pt-5">
-			<!-- Noticias más relevantes -->
-			<div class"col-sm-12">
-			<!-- <?php
-			consultarImagenesProgramaAcademico();
-			?> -->
-			</div>
-			<!-- /Noticias más relevantes -->
+		
 			<!--Slider-->
 			<?php
 			consultarImagenesSlider();
 			?>
 			<!--/Slider-->
+
+			<!-- secciones de cursos diplomados y convenio -->
+			 <div class="col-sm-12 cursos-diplo-con">
+			<ul class="nav nav-tabs" id="cursos_diplomados_convenios" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link " id="home-tab" data-toggle="tab" href="#cursos" role="tab" aria-controls="cursos" aria-selected="true">Cursos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#diplomados" role="tab" aria-controls="diplomados" aria-selected="false">Diplomados</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#convenios" role="tab" aria-controls="convenios" aria-selected="false">Convenios</a>
+				</li>
+				</ul>
+				<div class="tab-content" id="contenido">
+				<div class="tab-pane fad" id="cursos" role="tabpanel" aria-labelledby="-tab">
+				<div class="row">
+					<?php
+					consultarImagenesProgramaAcademico(); //Programas academicos cursos dictando
+					?>
+			</div>
+				</div>
+				<div class="tab-pane fade" id="diplomados" role="tabpanel" aria-labelledby="profile-tab">
+					pppoaienoeinepoepo
+				</div>
+				<div class="tab-pane fade" id="convenios" role="tabpanel" aria-labelledby="contact-tab"></div>
+				</div>
+				</div>
+				<!-- Noticias más relevantes -->
+			 
+			<!-- /Noticias más relevantes -->
 		</section>
 		<!-- /Noticias -->
 		<!-- Portafolio -->

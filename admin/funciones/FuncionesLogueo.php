@@ -5,7 +5,7 @@
         
 		function consultarUsuario(){   
             $usuario = $_POST['user'];
-            $password = md5($_POST['pass']);                    
+            $password = md5($_POST['pass']);//Encripta la constrasena dada por el usuario                    
 		//Se consultan todos los usuarios
             $conexion=Conexion::getInstance();            
             $consulta = "select `contrasena` from `usuario` where `correo` = '" . $usuario . "'";
@@ -15,10 +15,10 @@
 			if($registros){                
                 $reg=mysqli_fetch_assoc($registros);                
                 $passBase = $reg['contrasena'];
-                if($password ==  $passBase){                                      
+                if($password ==  $passBase){     //se verifican las dos contrasenas                                 
                     header("Location: ../inicioAdmin.php");
-                }else{                    
-                    header("Location: ../loginAdmin.php");
+                }else{                                     
+                    header("Location: ../loginAdmin.php");                                        
                 exit();
                 }
             }

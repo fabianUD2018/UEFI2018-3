@@ -29,8 +29,26 @@
       Author: BootstrapMade
       Author URL: https://bootstrapmade.com
     ======================================================= -->
+	<!-- Script -->
+	
+	<!--
+	<?php
+		session_start();
+		if(isset($_SESSION["id_usuario"])){
+			header("Location: inicioAdmin.php");
+		}		
+		if(!empty($_POST))
+		{			
+			$error='Mala';			
+		}
+		
+	?>
+	-->
+	
+	<!-- /Script -->		
 </head>
 <body>
+
 
 
 	<section id="inicio" class="sticky-top">
@@ -98,12 +116,13 @@
 					<div class="input-group justify-content-center">
 						<p class="login-img"><i class="fa fa-lock pt-2 pb-2"></i></p>
 					</div>
+					<div style = "font-size:16px; color:#CC0000;"><?php echo isset($error)  ?></div>
           <div class="input-group">
 						<div class="col-1">
 							<i class="fa fa-user"></i>
-						</div>
+						</div>						
             <div class="col">
-							<input type="text" class="form-control" placeholder="Correo" autofocus name="user">
+							<input type="text" class="form-control" placeholder="Correo" autofocus name="user" required>
 						</div>
           </div>
           <div class="input-group">
@@ -111,7 +130,7 @@
 							<i class="fa fa-key"></i>
 						</div>
 						<div class="col">
-							<input type="password" class="form-control" placeholder="Contrasena" name="pass">
+							<input type="password" class="form-control" placeholder="Contrasena" name="pass" required>
 						</div>
           </div>
 					<center>
@@ -138,7 +157,9 @@
 	<script src="../js/custom.js"></script>
 	<script src="../lib/morphext/js/morphext.min.js"></script>
 	<script src="../lib/wow/js/wow.min.js"></script>
-	<!-- /Librerias -->	
+	
+	<!-- /Librerias -->
+	
 </body>
 
 </html>

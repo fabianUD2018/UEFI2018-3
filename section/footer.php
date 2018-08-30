@@ -56,31 +56,34 @@
     			</div>
     		</div>
             <div class="row align-self-center">
-                <!-- Alcaldia-->
+                
+                <!--  
+                 Alcaldia
     			<div class="col-md-2 align-self-center">
                 <a href="http://secretariageneral.gov.co/" target="_balnk"> <img src="../img/imgfooter/alcaldia.png" height="40"></a>    
                 </div>
-                <!-- Veeduria-->
+                 Veeduria
                 <div class="col-md-2 align-self-center">
                 <a href="http://www.veeduriadistrital.gov.co/" target="_balnk"> <img src="../img/imgfooter/veeduria.png" height="40"></a>  
                 </div>
-                <!-- MinTIC-->
+                 MinTIC
                 <div class="col-md-2 align-self-center">
                 <a href="http://www.mintic.gov.co" target="_balnk"><img src="../img/imgfooter/mintic.png" height="40"></a>  
                 </div>
-                <!-- Gobierno en Linea-->
+                 Gobierno en Linea
                 <div class="col-md-2 align-self-center">
                 <a href="http://estrategia.gobiernoenlinea.gov.co" target="_balnk"> <img src="../img/imgfooter/gobiernoenlinea.jpg" height="40"></a>  
                 </div>
-                <!-- Ministerio de Educación-->
+                 Ministerio de Educación
                 <div class="col-md-2 align-self-center">
                 <a href="http://www.mineducacion.gov.co/portal/" target="_balnk"><img src="../img/imgfooter/mineducacion.png" height="40"></a>  
                 </div>
-                <!-- Compra Eficiente-->
+                 Compra Eficiente
                 <div class="col-md-2 align-self-center">
                 <a href="https://www.colombiacompra.gov.co/" target="_balnk"><img src="../img/imgfooter/compraeficiente.png" height="40"></a>  
                 </div>
-    		</div>
+    		    -->
+            </div>
             <div class="row">
                 <!--Acreditación -->
     			<div class="col-md-4 align-self-center">

@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- Hojas de estilo -->
-	
-	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../lib/animate/css/animate.min.css" >
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../lib/imagehover/css/imagehover.min.css">
-	<!-- /Hojas de estilo -->
-</head>
-<body>
-<div class="nav nav-bar contenedor-menu"  >
+
+<div class="nav nav-bar contenedor-menu d-sm-none d-md-block"  >
     <ul class="nav flex-column font-weight-bold " id ="menu-vertical">
     <li class="nav-item pr-2 ">
 		<a class="nav-link list-group-item list-group-item-action list-group-item-info" href="../page/Inicio.php">Inicio</a>
@@ -39,6 +24,3 @@
         </li>  
     </ul>
 </div>
-</body>
-</html>
-

@@ -7,7 +7,7 @@
 			$numeroRegistros = mysqli_num_rows($registros);
 			
 			//<!-- Carrousel -->
-			echo "<div  id=\"news\" class=\"col-md-12 carousel slide\" data-ride=\"carousel\">";
+			echo "<div  id=\"news\" class=\"col-md-12 carousel flex-none slide\" data-ride=\"carousel\">";
 				if ($numeroRegistros!=0) {
 				//<!-- Indicators -->
 					echo "<ul class=\"carousel-indicators\">";
@@ -81,7 +81,7 @@
 			
 			if ($numeroRegistros!=0) {
 				$contador=0;
-				echo"<div class= \" m-5 \">";
+				echo"<div class= \" m-12 \">";
 				while($reg=mysqli_fetch_assoc($registros)){
 					$contador=2;
 					$idprogramaacademico = $reg['idprogramaacademico'];
@@ -126,7 +126,7 @@
 			$numeroRegistros = mysqli_num_rows($registros);
 		
 
-			echo"<div class= \" m-5 \">";
+			echo"<div class= \" m-2 p-3 \">";
 			if ($numeroRegistros!=0) {
 				$contador=0;
 				while($reg=mysqli_fetch_assoc($registros)){

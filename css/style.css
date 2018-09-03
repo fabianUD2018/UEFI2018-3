@@ -12,8 +12,9 @@ body {
 cursos-diplomados-convenios******/
 .cursos-diplo-con{
 padding: 2px;
+
 }
-div[class$="cursos-diplo-con"] li a{
+div[class*="cursos-diplo-con"] li a{
     text-align: center;
     background-color: hsla(203, 53%, 24%);
     color: white;

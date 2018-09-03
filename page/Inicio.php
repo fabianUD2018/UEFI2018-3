@@ -67,23 +67,24 @@
 		</nav>
 		<!-- Main Navbar -->
 	</div>
+
 	<!-- /Navbar General -->
 	</section>
 	<!-- Inicio -->
 	<div class="container-fluid">
-	<?php include("../section/nav-lateral.php"); ?>
-
+	
+	
 		<!-- Noticias -->
 		<section id="Noticias " class="col-sm-12 justify-content-center pt-5">
+		<?php// include("../section/nav-lateral.php"); ?>
 		
 			<!--Slider-->
 			<?php
-			consultarImagenesSlider();
+			 //consultarImagenesSlider();
 			?>
 			<!--/Slider-->
-
-			<!-- secciones de cursos diplomados y convenio -->
-			<div class="container ">
+					<!-- secciones de cursos diplomados y convenio -->
+			<div class=" cursos-diplo-con ">
 				<ul class="nav nav-tabs" id="cursos_diplomados_convenios" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link "  data-toggle="tab" href="#cursos" role="tab" aria-controls="cursos" aria-selected="true">Cursos</a>
@@ -123,7 +124,9 @@
 			</div>
 				<!-- Noticias más relevantes -->
 			 
-			<!-- /Noticias más relevantes -->
+			<!-- info inicio-->
+			<?php include("../section/imagenes-muestra.php"); ?>
+			<!-- info inicio-->
 
 			
 		</section>

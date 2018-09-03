@@ -67,7 +67,7 @@
 	</div>
 	<!-- /Navbar General -->
 	</section>
-	
+	<?php include("../section/nav-lateral.php"); ?>
 	<div class="container pt-5">
 		<div class="row">
 			<!-- Envío de un mensaje -->

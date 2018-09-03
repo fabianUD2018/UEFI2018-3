@@ -79,7 +79,7 @@
 	</div>
 	<!-- /Navbar General -->
 	</section>
-
+	<?php include("../section/nav-lateral.php"); ?>
 	<!--Formulario-->
 	<div class="container">
 		<h3 class="section-title text-center">Formulario de Inscripción</h3>

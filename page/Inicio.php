@@ -67,22 +67,68 @@
 		</nav>
 		<!-- Main Navbar -->
 	</div>
+
 	<!-- /Navbar General -->
 	</section>
 	<!-- Inicio -->
-	<div class="container">
+	<div class="container-fluid">
+	
+	
 		<!-- Noticias -->
-		<section id="Noticias" class="row justify-content-center pt-5">
-			<!-- Noticias más relevantes -->
-			<?php
-			consultarImagenesProgramaAcademico();
-			?>
-			<!-- /Noticias más relevantes -->
+		<section id="Noticias " class="col-sm-12 justify-content-center pt-5">
+		<?php// include("../section/nav-lateral.php"); ?>
+		
 			<!--Slider-->
 			<?php
-			consultarImagenesSlider();
+			 //consultarImagenesSlider();
 			?>
 			<!--/Slider-->
+					<!-- secciones de cursos diplomados y convenio -->
+			<div class=" cursos-diplo-con ">
+				<ul class="nav nav-tabs" id="cursos_diplomados_convenios" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link "  data-toggle="tab" href="#cursos" role="tab" aria-controls="cursos" aria-selected="true">Cursos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"  data-toggle="tab" href="#diplomados" role="tab" aria-controls="diplomados" aria-selected="false">Diplomados</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#convenios" role="tab" aria-controls="convenios" aria-selected="false">Convenios</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="contenido">
+					<div class="tab-pane fade" id="cursos" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row">
+							<?php
+							traerImagenes(1); //Programas academicos cursos dictando
+							//consultarImagenesProgramaAcademico();
+							?>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="diplomados" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="row">
+							<?php 
+								traerImagenes(2);
+							?> 
+						</div>
+					</div>
+					<div class="tab-pane fade" id="convenios" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="row">
+							<?php
+							//traerImagenes(3);
+							?>
+						</div>
+
+					</div>
+				</div>
+			</div>
+				<!-- Noticias más relevantes -->
+			 
+			<!-- info inicio-->
+			<?php include("../section/imagenes-muestra.php"); ?>
+			<!-- info inicio-->
+
+			
 		</section>
 		<!-- /Noticias -->
 		<!-- Portafolio -->

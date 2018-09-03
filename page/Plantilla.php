@@ -68,7 +68,7 @@
 	<!-- /Navbar General -->
 	</section>
 
-
+<?php include("../section/nav-lateral.php"); ?>
 
 	<!-- Pie de página -->
 	<?php include("../section/footer.php"); ?>

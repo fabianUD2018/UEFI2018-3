@@ -5,10 +5,21 @@ Body (Color uefi: rgb(35, 93, 128); )
 
 body {
     background: #ffffff;
-    color: black;
+    
 }
 
+/*¨****
+cursos-diplomados-convenios******/
+.cursos-diplo-con{
+padding: 2px;
 
+}
+div[class*="cursos-diplo-con"] li a{
+    text-align: center;
+    background-color: hsla(203, 53%, 24%);
+    color: white;
+
+}
 /***********************************
 Navbar
 ************************************/
@@ -19,6 +30,15 @@ Navbar
 .nav-principal {
     background-color: hsla(203, 53%, 24%);
     color: white;
+}
+
+
+.contenedor-menu{
+    float:left;
+    
+}
+a .active{
+    color: hsla(0, 0%, 80%);
 }
 
 

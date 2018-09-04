@@ -20,29 +20,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                <h4> Visite los siguientes enlaces de interés </h4>
-                    <ul class="s-footer__linklist">
-                        <li>
-                            <a href="index.php">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="biografia.html">Cursos</a>
-                        </li>
-                        <li>
-                            <a href="videos.html">Diplomados</a>
-                        </li>
-                        <li>
-                            <a href="musica.html">Conocenos</a>
-                        </li>
-                        <li>
-                            <a href="educacion.html">Convenios</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+                
                 <div class="col-md-4">
                 <h4>Consulte la información de Contacto</h4>
                     <ul class="s-footer__linklist">
@@ -55,9 +33,16 @@
                     </ul>
     			</div>
     		</div>
-            <div class="row align-self-center">
-                
-                <!--  
+            <div class="row">
+                <div id="contenedor">
+                    <div id="carrusel">
+                        <!-- Funcion de footer -->
+                        <script src="../js/FooterAnimacion.js"></script>
+                        <!-- /Funcion de footer -->
+                    </div>
+                </div>
+            </div>
+            <!--  
                  Alcaldia
     			<div class="col-md-2 align-self-center">
                 <a href="http://secretariageneral.gov.co/" target="_balnk"> <img src="../img/imgfooter/alcaldia.png" height="40"></a>    
@@ -83,7 +68,7 @@
                 <a href="https://www.colombiacompra.gov.co/" target="_balnk"><img src="../img/imgfooter/compraeficiente.png" height="40"></a>  
                 </div>
     		    -->
-            </div>
+           
             <div class="row">
                 <!--Acreditación -->
     			<div class="col-md-4 align-self-center">
@@ -112,6 +97,7 @@
     <!-- Volver al principio de la página -->
     <button id="back-to-top" class="btn btn-circle btn-lg back-to-top" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-circle-up"></i></button>
     <!-- /Volver al principio de la página -->
+
   <!-- /Fin Pie de página -->
 </body>
 </html>
